@@ -13,6 +13,7 @@ Executes a `docsearch` command.
 action "Generate index" {
   uses = "Embraser01/docsearch-scraper-action@master"
   args = ["run /github/workspace/algolia-config.json"]
+  secrets = ["API_KEY", "APPLICATION_ID"]
 }
 ```
 
